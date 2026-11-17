@@ -61,6 +61,41 @@
     measureOverflow();
   });
 
+  // The compact model list mirrors the actual table cells, including later CMS edits.
+  const summaryRows = [...document.querySelectorAll('[data-summary-row]')];
+  const specsRoot = document.querySelector('[data-technical-specs]');
+  const modelBindings = [];
+  const bindings = summaryRows.flatMap(summary => {
+    const row = document.getElementById(summary.dataset.summaryRow);
+    if (!row) return [];
+    modelBindings.push({row, label:summary.querySelector('[data-summary-model]'), header:row.querySelector('th'), select:row.closest('[data-spec-panel]').querySelector('[data-spec-model]')});
+    return [...summary.querySelectorAll('[data-summary-value]')].flatMap(value => {
+      const cell = [...row.querySelectorAll('[data-parameter]')].find(item => item.dataset.parameter === value.dataset.summaryValue);
+      return cell ? [{value,cell,wrapper:value.parentElement}] : [];
+    });
+  });
+  const syncSummary = () => bindings.forEach(({value,cell,wrapper}) => {
+    if (value.textContent !== cell.textContent) value.textContent = cell.textContent;
+    const missing = String(!cell.textContent.trim() || cell.textContent.trim() === wrapper.dataset.summaryEmpty);
+    if (wrapper.dataset.summaryMissing !== missing) wrapper.dataset.summaryMissing = missing;
+  });
+  if (summaryRows.length && specsRoot) {
+    syncSummary();
+    const syncModels = () => modelBindings.forEach(({row,label,header,select}) => {
+      const next = header.textContent.trim(), previous = row.dataset.specRow;
+      if (label.textContent !== next) label.textContent = next;
+      if (next && next !== previous) {
+        const option = [...select.options].find(item => item.value === previous);
+        const wasSelected = select.value === previous;
+        if (option) {option.value = next; option.textContent = next;}
+        row.dataset.specRow = next;
+        if (wasSelected) select.value = next;
+      }
+    });
+    syncModels();
+    new MutationObserver(() => {syncSummary(); syncModels();}).observe(specsRoot, {subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['class']});
+  }
+
   document.querySelectorAll('[data-drawing-viewer]').forEach(viewer => {
     const stage = viewer.querySelector('[data-drawing-stage]');
     const expand = viewer.querySelector('[data-drawing-expand]');
