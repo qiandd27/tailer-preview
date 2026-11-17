@@ -1,8 +1,9 @@
 import {createCloudClient} from './cloud-api.mjs';
 import {createTeamUI} from './team-ui.mjs';
+import {createNewsEditor} from './news-editor.mjs';
 import {repository,contentPath,validateContent} from '../content-model.mjs';
 const $=s=>document.querySelector(s),clone=x=>structuredClone(x),local=location.hostname==='127.0.0.1';
-let cloud=null,cloudMember=null,team=null;
+let cloud=null,cloudMember=null,team=null,mediaBusy=false;
 const configReady=fetch('../content/backend-config.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('账号服务暂时无法连接，请刷新后重试。');return r.json();});
 let token='',csrf='',schema,data,saved,sha='',dirty=false,busy=false,currentView='products';
 const decode=base64=>new TextDecoder().decode(Uint8Array.from(atob(base64.replace(/\s/g,'')),c=>c.charCodeAt(0)));
@@ -14,7 +15,7 @@ async function github(path,options={}){
 async function api(path,options={}){const r=await fetch('/api/'+path,{...options,headers:{'Content-Type':'application/json','X-Cms-CSRF':csrf,...options.headers}});const body=await r.json();if(!r.ok)throw Error(body.error||'管理服务连接失败');return body;}
 async function readContent(){return cloud?cloud.content():local?api('content'):github('/repos/'+repository+'/contents/'+contentPath+'?ref=main');}
 function message(text,error=false){$('#status').textContent=text;$('.save-status').classList.toggle('is-error',error);}
-function changed(){dirty=true;$('#publish').disabled=busy;$('#dirty-label').textContent='有未发布的修改';$('.save-status').classList.add('is-dirty');preview();}
+function changed(){dirty=true;$('#publish').disabled=busy||mediaBusy;$('#dirty-label').textContent='有未发布的修改';$('.save-status').classList.add('is-dirty');preview();}
 function clean(){dirty=false;$('#publish').disabled=true;$('#dirty-label').textContent='内容已同步';$('.save-status').classList.remove('is-dirty');}
 function preview(){const frame=$('#page-frame');if(frame.contentWindow)frame.contentWindow.postMessage({type:'tailer:preview',content:data},location.origin);}
 function options(select,items,selected){select.replaceChildren();for(const [value,label] of items){const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o);}if(items.some(x=>x[0]===selected))select.value=selected;}
@@ -23,7 +24,8 @@ function fieldList(selected){const page=$('#page-select').value,q=$('#field-sear
 function field(){const page=$('#page-select').value,key=$('#field-select').value;$('#field-value').disabled=!key;$('#field-reset').disabled=!key;$('#field-value').value=key?(data.pages[page]?.[key]??schema.pages[page].fields[key].value):'';}
 function page(){fieldList();$('#page-frame').src='../'+$('#page-select').value+'?cms-edit=1';}
 function newsList(selected){options($('#news-select'),data.news.map(n=>[n.id,n.titleZh||'未命名资讯']),selected);news();}
-function news(){const n=data.news.find(x=>x.id===$('#news-select').value);$('#news-form').hidden=!n;$('#news-delete').disabled=!n;if(n)for(const el of $('#news-form').elements)if(el.name)el.value=n[el.name]||'';}
+const newsEditor=createNewsEditor({root:$('#news-media-editor'),getArticle:()=>data?.news.find(x=>x.id===$('#news-select').value),getSchema:()=>schema,onChange:changed,status:message,onBusy:value=>{mediaBusy=value;$('#workspace').inert=value;$('#publish').disabled=busy||mediaBusy||!dirty;}});
+function news(){const n=data.news.find(x=>x.id===$('#news-select').value);$('#news-form').hidden=!n;$('#news-delete').disabled=!n;if(n)for(const el of $('#news-form').elements)if(el.name)el.value=n[el.name]||'';newsEditor.render();}
 function initialize(){
  options($('#product-select'),Object.entries(schema.products).map(([id,p])=>[id,p.model+' · '+p.zh]));
  options($('#page-select'),Object.entries(schema.pages).map(([id,p])=>[id,(id.startsWith('en/')?'EN · ':'中文 · ')+p.title+' / '+id]));
@@ -60,8 +62,8 @@ $('#news-form').addEventListener('input',event=>{const n=data.news.find(x=>x.id=
 $('#news-add').addEventListener('click',()=>{const n={id:'news-'+Date.now().toString(36),date:new Date().toLocaleDateString('sv-SE'),category:'company',titleZh:'',titleEn:'',summaryZh:'',summaryEn:'',bodyZh:'',bodyEn:''};data.news.unshift(n);newsList(n.id);changed();$('#news-form').elements.titleZh.focus();});
 $('#news-delete').addEventListener('click',()=>{const id=$('#news-select').value;if(!confirm('删除这篇资讯？点击“保存并发布”后生效。'))return;data.news=data.news.filter(n=>n.id!==id);newsList();changed();});
 $('#discard').addEventListener('click',()=>{if(!dirty||confirm('放弃本次尚未发布的所有修改？')){data=clone(saved);product();fieldList();newsList();clean();preview();message('已恢复至上次保存的内容。');}});
-$('#publish').addEventListener('click',async()=>{if(busy||!dirty)return;try{validateContent(data,schema);busy=true;$('#workspace').inert=true;$('#publish').disabled=true;message('正在保存并提交发布…');const next={...clone(data),revision:data.revision+1};
+$('#publish').addEventListener('click',async()=>{if(busy||mediaBusy||!dirty)return;try{validateContent(data,schema);busy=true;$('#workspace').inert=true;$('#publish').disabled=true;message('正在保存并提交发布…');const next={...clone(data),revision:data.revision+1};
  const result=cloud?await cloud.save(next,Number(sha)):local?await api('content',{method:'PUT',body:JSON.stringify({sha,data:next})}):await github('/repos/'+repository+'/contents/'+contentPath,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'Update website content from Tailer CMS',branch:'main',sha,content:encode(JSON.stringify(next,null,2)+'\n')})});
- sha=cloud?String(result.revision):result.content.sha;data=next;saved=clone(next);clean();message(cloud?'已发布版本 '+next.revision+'，刷新网站即可查看。':'已保存版本 '+next.revision+'，公开站点正在更新。完成部署后刷新查看。');
+ sha=cloud?String(result.revision):result.content.sha;data=next;saved=clone(next);clean();news();message(cloud?'已发布版本 '+next.revision+'，刷新网站即可查看。':'已保存版本 '+next.revision+'，公开站点正在更新。完成部署后刷新查看。');
  }catch(error){message(error.message,true);}finally{busy=false;$('#workspace').inert=false;$('#publish').disabled=!dirty;}});
 addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
