@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 0,
+  "revision": 1,
   "products": {},
   "pages": {},
   "news": [
@@ -10,8 +10,8 @@
       "category": "service",
       "titleZh": "产品样本与技术图纸，统一通过询盘索取",
       "titleEn": "Request product catalogues and technical drawings",
-      "summaryZh": "提供完整型号与应用需求，便于核对适用资料。",
-      "summaryEn": "Share the complete model and application to identify the appropriate documents.",
+      "summaryZh": "提交完整型号、设备用途和联系方式，索取匹配的产品样本与技术图纸。",
+      "summaryEn": "Share the full model, machine application and contact details to request the appropriate catalogue and drawings.",
       "bodyZh": "泰乐网站保留产品介绍与技术参数展示。完整产品样本、安装图纸及零件资料，请通过询盘向我们索取。\n\n请提供产品完整型号、设备品牌与机型、应用工况，以及联系方式。如有铭牌照片或现有部件照片，也可通过微信发送给我们。\n\n联系微信：17700593723。我们将结合具体型号与需求核对资料。",
       "bodyEn": "The Tailer website provides product introductions and technical specifications. Complete catalogues, installation drawings and parts documents are available by enquiry.\n\nPlease include the complete product model, machine brand and model, working conditions, and your contact details. Nameplate and component photographs can be shared through WeChat.\n\nWeChat: 17700593723. Documentation is reviewed against the specific model and application."
     },
