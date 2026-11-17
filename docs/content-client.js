@@ -44,7 +44,15 @@
   document.dispatchEvent(new CustomEvent('tailer:content-ready',{detail:{revision:data.revision}}));
  }
  document.querySelectorAll('[data-news-filter]').forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.newsFilter;document.querySelectorAll('[data-news-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));if(current)renderNews(current);}));
- fetch(new URL('content/site-content.json',base),{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('content');return r.json();}).then(apply).catch(()=>{document.querySelectorAll('.news-loading').forEach(p=>{p.textContent=t('资讯暂时无法载入，请稍后刷新。','News could not be loaded. Please refresh.');});});
+ async function loadPublicContent(){
+  let config;try{const r=await fetch(new URL('content/backend-config.json',base),{cache:'no-cache'});if(r.ok)config=await r.json();}catch{}
+  if(config?.provider==='supabase'){
+   if(!/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(config.url)||!config.publishableKey||config.publishableKey.startsWith('sb_secret_'))throw Error('content configuration');
+   const r=await fetch(config.url+'/rest/v1/tailer_content?id=eq.website&select=document&limit=1',{headers:{apikey:config.publishableKey},cache:'no-store'});if(!r.ok)throw Error('content');const rows=await r.json();if(!rows[0]?.document)throw Error('content');return rows[0].document;
+  }
+  const r=await fetch(new URL('content/site-content.json',base),{cache:'no-cache'});if(!r.ok)throw Error('content');return r.json();
+ }
+ loadPublicContent().then(apply).catch(()=>{document.querySelectorAll('.news-loading').forEach(p=>{p.textContent=t('资讯暂时无法载入，请稍后刷新。','News could not be loaded. Please refresh.');});});
  if(window.parent!==window&&new URLSearchParams(location.search).get('cms-edit')==='1'){
   let editing=false;
   addEventListener('message',event=>{if(event.origin!==location.origin||event.source!==parent)return;
