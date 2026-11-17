@@ -4,6 +4,10 @@
   const navToggle = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-navigation');
   if (menu) {
+    menu.querySelector('[data-close-product-menu]')?.addEventListener('click', () => {
+      menu.open = false;
+      menu.querySelector('summary')?.focus();
+    });
     document.addEventListener('pointerdown', event => {
       if (!menu.contains(event.target)) menu.open = false;
     });
