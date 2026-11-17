@@ -1,6 +1,6 @@
 export function createTeamUI({client,member,onPasswordChanged,status}){
  const $=s=>document.querySelector(s);let busy=false;
- const shareUrl='https://qiandd27.github.io/tailer-preview/admin/';
+ const shareUrl=new URL('./',location.href).href;
  const clearCredentials=()=>{$('#member-credentials-text').value='';$('#member-credentials').hidden=true;};
  function showCredentials(username,password){$('#member-credentials-text').value='后台：'+shareUrl+'\n账号：'+username+'\n初始密码：'+password+'\n首次登录请修改密码。';$('#member-credentials').hidden=false;}
  $('#member-credentials-clear').addEventListener('click',clearCredentials);
