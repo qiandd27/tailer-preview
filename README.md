@@ -5,9 +5,11 @@ This repository contains only the public static files for a website design revie
 - Publishing directory: `docs/`
 - GitHub Pages source: `main`, `/docs`
 - Expected preview path: `/tailer-preview/`
-- Original source revision: `6d28950f9ccba64b1da9c38966542a6db93d0da9`
-- Public catalogue: 26 product families, 69 HTML pages, 3 TAILER PDFs.
-- Korean manufacturer originals and withdrawn full-page previews are excluded.
+- Original source revision: `c6755bfc4978162f71c91362eb9160a18a21b28b`
+- Public catalogue: 25 product families, 72 HTML pages, 0 PDFs.
+- All catalogues and full-page previews are supplied only on enquiry.
+- Production-line content has been removed. Marine equipment is under Products.
+- News and CMS: `/news.html`, `/admin/`; editable content: `docs/content/site-content.json`.
 - Search engines are asked not to index this preview.
 
-The preview has no backend, login, payment processing, or server-side submission of enquiry data. Website assets remain the property of their respective owners; publication of this preview is not a license grant.
+The content manager saves to this repository through GitHub authorization; credentials are never included in the website. A loopback-only desktop management service is provided separately in the source workspace. Enquiry information is prepared in the visitor's browser and sent only through their chosen email or WeChat application. Website assets remain the property of their respective owners; publication of this preview is not a license grant.

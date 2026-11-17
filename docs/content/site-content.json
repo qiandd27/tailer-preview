@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "revision": 0,
+  "products": {},
+  "pages": {},
+  "news": [
+    {
+      "id": "request-product-documentation",
+      "date": "2026-11-17",
+      "category": "service",
+      "titleZh": "产品样本与技术图纸，统一通过询盘索取",
+      "titleEn": "Request product catalogues and technical drawings",
+      "summaryZh": "提供完整型号与应用需求，便于核对适用资料。",
+      "summaryEn": "Share the complete model and application to identify the appropriate documents.",
+      "bodyZh": "泰乐网站保留产品介绍与技术参数展示。完整产品样本、安装图纸及零件资料，请通过询盘向我们索取。\n\n请提供产品完整型号、设备品牌与机型、应用工况，以及联系方式。如有铭牌照片或现有部件照片，也可通过微信发送给我们。\n\n联系微信：17700593723。我们将结合具体型号与需求核对资料。",
+      "bodyEn": "The Tailer website provides product introductions and technical specifications. Complete catalogues, installation drawings and parts documents are available by enquiry.\n\nPlease include the complete product model, machine brand and model, working conditions, and your contact details. Nameplate and component photographs can be shared through WeChat.\n\nWeChat: 17700593723. Documentation is reviewed against the specific model and application."
+    },
+    {
+      "id": "prepare-hydraulic-enquiry",
+      "date": "2026-11-17",
+      "category": "guide",
+      "titleZh": "液压产品询盘，需要准备哪些信息？",
+      "titleEn": "What should you include in a hydraulic product enquiry?",
+      "summaryZh": "从铭牌、工况到安装接口，让选型沟通更明确。",
+      "summaryEn": "From nameplates and operating conditions to mounting interfaces.",
+      "bodyZh": "系列名称是产品选型的起点。核对现有设备时，请尽量提供完整铭牌型号、设备品牌与机型、现有部件照片。\n\n如已明确技术要求，请补充排量、工作压力、控制方式、旋向和安装接口。配件需求还可提供零件编号或标注位置。\n\n产品配置需要结合具体型号与工况确认。可在联系页面整理询盘内容，通过邮箱发送，或复制后通过微信与我们沟通。",
+      "bodyEn": "A series name is a starting point for product selection. Include the complete nameplate code, machine brand and model, and photographs of the existing component.\n\nIf technical requirements are known, add displacement, working pressure, control method, rotation and mounting interfaces. For parts, include the part number or marked position.\n\nConfirm the configuration against the complete model and operating conditions. Prepare your enquiry on the contact page, then send it by email or copy it to WeChat."
+    }
+  ]
+}

@@ -31,7 +31,7 @@ body[data-page=home] .section-heading h2{font-size:clamp(34px,3.5vw,54px);line-h
 .scene-controls{display:flex;align-items:center;gap:6px}.scene-controls button{display:grid;place-items:center;width:44px;height:44px;min-height:44px;background:transparent;color:#d7e0e6;border:1px solid transparent;border-radius:0}
 .scene-controls button:hover{background:#ffffff10;border-color:#ffffff40}.scene-controls svg{width:18px;height:18px}.scene-controls button>span{display:flex}
 .scene-counter{font-size:12px;letter-spacing:.12em;color:#99acb9;margin-right:12px;font-variant-numeric:tabular-nums}.scene-counter b{color:#fff;font-weight:600}
-.scene-nav-list{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:22px;position:relative}
+.scene-nav-list{display:grid;grid-template-columns:repeat(var(--scene-count,6),minmax(0,1fr));gap:22px;position:relative}
 .scene-nav-list>button{position:relative;display:flex;align-items:center;gap:10px;min-height:53px;padding:8px 0 14px;text-align:left;color:#aebcc6;background:transparent;border:0;border-bottom:2px solid #ffffff20;font-size:17px;font-weight:600;white-space:nowrap}
 .scene-tab-number{font-size:10px;font-weight:400;letter-spacing:.06em;color:#7e94a4}.scene-nav-list>button[aria-pressed=true]{color:#fff}.scene-nav-list>button[aria-pressed=true] .scene-tab-number{color:#fa6a7d}
 .scene-nav-list>button>i{position:absolute;bottom:-2px;left:0;height:2px;width:100%;background:#e23044;transform:scaleX(0);transform-origin:left}

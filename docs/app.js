@@ -48,6 +48,7 @@
     const params=new URLSearchParams(location.search);
     if(params.get('product')){const value=params.get('product');const option=[...form.elements.product.options].find(o=>o.value===value);if(option)form.elements.product.value=value;}
     if(params.get('application')){const value=params.get('application');const option=[...form.elements.application.options].find(o=>o.value===value);if(option)form.elements.application.value=value;}
+    if(params.get('request'))form.elements.requirements.value=t('需要索取资料：','Documentation requested: ')+(params.get('request')==='documentation'?t('对应型号样本与技术图纸','Catalogue and drawings for this model'):params.get('request'))+'\n'+t('设备型号 / 用途：','Machine / application: ');
     let summary='';
     form.addEventListener('submit',e=>{
       e.preventDefault();
