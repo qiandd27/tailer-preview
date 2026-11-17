@@ -1,30 +1,467 @@
 {
-  "version": 1,
-  "revision": 2,
-  "products": {},
-  "pages": {},
   "news": [
+    {
+      "id": "industrial-pump-selection",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/k3vl-official-original.jpg",
+        "altEn": "K3VL industrial piston pump",
+        "altZh": "K3VL 工业柱塞泵",
+        "width": 660,
+        "height": 500,
+        "captionEn": "FLUTEK manufacturer product image, shown in its original proportions.",
+        "captionZh": "FLUTEK 原厂产品图，保持原图比例。"
+      },
+      "bodyEn": "## Begin with the purpose of the enquiry\nFor a replacement, retain the complete nameplate, machine identity and original hydraulic schematic. For a new system, describe the actuator movements, loads and working cycle. A series name or a photograph alone does not provide enough information to match either application.\n\n## Describe the operating points\nPrepare a short duty table for normal operation, brief high-load periods and standby. Record pressure, flow, speed and duration, and label each value as measured, specified or estimated. Review continuous requirements separately from short peaks; a peak rating is not a continuous operating target.\n\n## Identify the control arrangement\nKawasaki lists load-sensing and constant-pressure options for K3VL, and combinations of flow, pressure and horsepower control for K3VG. A family name therefore does not define the complete function. Include regulator codes, pilot connections and electrical signals in the enquiry. This does not establish interchangeability between brands or suffixes.\n\n## Review the installation at the same time\nSubmit shaft and flange details, rotation, port orientation, available space and auxiliary drive requirements with the duty table. Record fluid type, ambient conditions, cooling arrangements and running hours as well. Mark unknown items for confirmation instead of entering assumed values.\n\n## Assemble a useful enquiry package\nCombine a readable nameplate image, an overall machine photograph, interface views, the schematic reference and the duty table. State whether the request concerns a complete pump, regulator or repair parts. The linked product pages introduce the families; request configuration-specific documentation and drawings by enquiry.",
+      "bodyZh": "## 先分清：更换原机，还是设计新系统\n更换现有泵时，首先保留完整铭牌、设备型号和原液压原理图；新系统选型则需要明确执行机构的动作、负载和工作节拍。两种任务的输入不同，不能只用一个系列名或一张外观照片完成匹配。\n\n## 把工作点写清楚\n建议整理一张工况表，逐项记录正常运行、短时高负载和待机状态下的压力、流量、转速及持续时间，并注明数据来自仪表记录、设计文件还是估算。连续工作需求与短时峰值需要分别核对；不要把峰值参数当作长期工作条件。\n\n## 同一系列，还要核对控制配置\nKawasaki 的官方说明列出了 K3VL 的负载敏感、恒压等控制选择，以及 K3VG 的流量、压力和功率控制组合。这说明系列名称不能完整描述泵的功能。询盘中应同时提供控制器代号、先导接口和电气信号信息，不能据此认定不同品牌或不同后缀可直接互换。\n\n## 安装条件与工况一起确认\n轴端、法兰、旋向、油口方向、安装空间和辅助驱动要求应与工况表一并提交。油液类型、环境温度、现有冷却条件和运行时长也应记录；无法确认的项目标为“待核对”，比填入猜测数值更有帮助。\n\n## 一份可直接用于沟通的资料包\n将铭牌近照、设备全景、安装接口照片、原理图编号及工况表放在一起，并写明需要整泵、控制器还是维修配件。下方产品页可用于初步了解系列；完整选型、安装图纸和配置核对请通过询盘获取。",
+      "images": [
+        {
+          "src": "assets/k3vg-official-original.jpg",
+          "altEn": "K3VG industrial piston pump",
+          "altZh": "K3VG 工业柱塞泵",
+          "width": 660,
+          "height": 500,
+          "captionEn": "FLUTEK manufacturer product image; configuration depends on the complete model code.",
+          "captionZh": "FLUTEK 原厂产品图；具体配置以完整型号为准。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://global.kawasaki.com/en/industrial_equipment/hydraulic/pumps/k3vl.html",
+          "titleEn": "Kawasaki: K3VL product and control overview",
+          "titleZh": "Kawasaki：K3VL 产品与控制方式"
+        },
+        {
+          "url": "https://global.kawasaki.com/en/industrial_equipment/hydraulic/pumps/k3vg.html",
+          "titleEn": "Kawasaki: K3VG industrial pumps",
+          "titleZh": "Kawasaki：K3VG 工业泵"
+        }
+      ],
+      "titleEn": "Selecting an industrial piston pump: model code to operating duty",
+      "titleZh": "工业柱塞泵选型：从完整型号到系统工况",
+      "category": "guide",
+      "summaryEn": "Bring displacement, pressure, speed and controls into one enquiry brief before selecting a pump.",
+      "summaryZh": "把排量、压力、转速和控制方式放在同一张需求表里，减少只凭系列名称选泵的偏差。",
+      "relatedProducts": [
+        "k3vl",
+        "k3vg",
+        "fp20v"
+      ]
+    },
+    {
+      "id": "pressure-load-sensing-controls",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/flutek-fp20v.png",
+        "altEn": "FP20V axial piston pump",
+        "altZh": "FP20V 轴向柱塞泵",
+        "width": 541,
+        "height": 410,
+        "captionEn": "Original FLUTEK product image; confirm ports and controls separately.",
+        "captionZh": "FLUTEK 产品资料原图；接口与控制配置需单独核对。"
+      },
+      "bodyEn": "## Start with the machine sequence\nDescribe approach, loading, holding and return movements, including any simultaneous functions. Record the objective and the observed issue for each stage. This helps separate a flow requirement, a pressure requirement and a response problem instead of treating every symptom as a question of pump size.\n\n## A control name is only the first detail\nOfficial K3VL and K3VG information describes several pressure, flow and power-related arrangements. The installed regulator and its adjustment range still require the complete ordering code and matching instructions. Two pumps described as constant-pressure or load-sensing units need not share interfaces or settings.\n\n## Document the signal chain\nProvide the relevant schematic pages, regulator labels and the supply and command definitions from existing electrical drawings. For proportional components, identify the connector, driver and feedback arrangement. Product pictures help identify component categories; they do not replace a wiring diagram or control specification.\n\n## Compare energy use against an actual duty cycle\nFor an efficiency project, first collect movement durations, standby time and available power measurements. Compare candidate configurations under equivalent duty conditions. Without calculation or testing, a fixed saving percentage or a universal control upgrade would not be a sound basis for selection.\n\n## Retain the original configuration\nRecord the existing model and settings for review by the personnel responsible for the equipment, using the appropriate manufacturer instructions. This article is an enquiry guide rather than a pressure-setting or piping procedure. Include the specific regulator or valve code when requesting assistance.",
+      "bodyZh": "## 先说明希望实现的动作\n选型沟通可以从设备动作开始：是否需要快速接近、加载、保压、回程，是否有多个动作同时运行。把各阶段的目标和当前问题分别记录，可帮助区分流量需求、压力要求和控制响应，而不是把所有现象都归因于泵的大小。\n\n## 控制名称只是第一层信息\n官方 K3VL 与 K3VG 资料列有多种压力、流量及功率相关控制配置。具体泵装了哪一种控制器、采用什么调节范围，仍需查看完整订货代码和对应说明。不要因为两台泵都写着“恒压”或“负载敏感”，就认为接口与调节方式相同。\n\n## 把信号链记录完整\n建议提供原理图上与泵控制有关的页码、控制器标签，以及已有电气图中的电源和信号定义。涉及比例阀时，还要确认连接器、驱动器与反馈安排。产品图片可以帮助辨认部件类别，不能替代具体接线图或控制说明。\n\n## 节能效果需要真实工况\n如果目标是降低能耗，应先整理不同动作的运行时间、待机时长和已有功率记录。配置比较应在同一工况基础上进行；未经过计算或测试，不承诺固定的节能百分比，也不把某一控制方式视为所有设备的通用升级。\n\n## 修改前保留原始设置\n记录原型号和现有设定，交由负责设备的专业人员结合原厂资料评估。本文用于整理选型信息，不提供现场调压或改接管路步骤。需要核对的控制器或阀件，可在询盘中注明具体代号与用途。",
+      "images": [
+        {
+          "src": "assets/flutek-eppr.png",
+          "altEn": "EPPR electro-hydraulic proportional reducing valve",
+          "altZh": "EPPR 电液比例减压阀",
+          "width": 539,
+          "height": 411,
+          "captionEn": "Original FLUTEK product image illustrating a control component.",
+          "captionZh": "FLUTEK 产品资料原图，用于控制元件说明。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://global.kawasaki.com/en/industrial_equipment/hydraulic/pumps/k3vl.html",
+          "titleEn": "Kawasaki: K3VL product and control overview",
+          "titleZh": "Kawasaki：K3VL 产品与控制方式"
+        },
+        {
+          "url": "https://global.kawasaki.com/en/industrial_equipment/hydraulic/pumps/k3vg.html",
+          "titleEn": "Kawasaki: K3VG industrial pumps",
+          "titleZh": "Kawasaki：K3VG 工业泵"
+        }
+      ],
+      "titleEn": "Pressure, load sensing and power control: describe the requirement",
+      "titleZh": "恒压、负载敏感与功率控制：询盘时如何说清需求",
+      "category": "product",
+      "summaryEn": "Explain the circuit, regulator and command signals so the required pump response can be reviewed.",
+      "summaryZh": "控制方式决定泵如何响应系统需求。整理原理图、控制器代号与信号，比只描述“流量不够”更有用。",
+      "relatedProducts": [
+        "fp20v",
+        "k3vl",
+        "k3vg",
+        "eppr"
+      ]
+    },
+    {
+      "id": "hydraulic-fluid-cleanliness",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/k3vg-official-original.jpg",
+        "altEn": "K3VG industrial piston pump",
+        "altZh": "K3VG 工业柱塞泵",
+        "width": 660,
+        "height": 500,
+        "captionEn": "FLUTEK manufacturer product image; configuration depends on the complete model code.",
+        "captionZh": "FLUTEK 原厂产品图；具体配置以完整型号为准。"
+      },
+      "bodyEn": "## Why the fluid record matters\nHydraulic fluid transmits power and also supports lubrication and heat removal. Bosch Rexroth highlights fluid quality and cleanliness as important to reliable operation. A practical starting point is to identify the fluid in the system, its replenishment and replacement history, and the equipment requirements.\n\n## Keep a basic equipment log\nRecord the machine identifier, fluid product, reservoir identification, filter reference, latest service date and operating hours. Retain product and quantity details for top-ups. Check mixing permissions and seal compatibility against equipment and fluid documentation; similar colour or a matching viscosity designation is insufficient.\n\n## Make samples comparable\nUse the site maintenance procedure to define sampling points, methods and test items, and record conditions and time with each sample. Review laboratory results alongside equipment requirements and earlier trends. There is no universal cleanliness code, viscosity value or oil-change interval supplied here for every pump.\n\n## Turn observations into evidence\nLog existing temperature and level readings, filter indicators and changes such as unusual foam, external leakage or discolouration. Note when the change began and whether it followed maintenance or a different duty cycle. Appearance alone cannot replace testing or establish the condition of internal parts.\n\n## Close the maintenance record\nAfter the prescribed work, record the fluid and filter used, the reason for intervention and the follow-up result. Trained personnel should perform sampling, disconnection and dismantling under the machine shutdown, isolation and pressure-release procedure. Attach this history to a repair enquiry instead of reporting only that a pump has failed.",
+      "bodyZh": "## 为什么要记录油液状态\n液压油不仅传递动力，还承担润滑和散热等作用。Bosch Rexroth 的官方资料强调油液品质与清洁度对系统可靠运行的重要性。对使用者来说，维护的起点是知道系统里使用了什么油、何时补充或更换，以及设备说明提出了哪些要求。\n\n## 建立一张基础台账\n记录设备编号、油品牌号、油箱标识、滤芯型号、最近维护日期和累计工时。若曾补充不同批次的油，应留下产品名称与数量记录。油液混用是否允许、密封材料是否适配，应按设备与油品资料核对，不以颜色相近或黏度名称相同直接判断。\n\n## 取样结果要能够比较\n按现场维护程序确定取样位置、方法和检测项目，并在每次记录中注明工况与时间。将实验室报告与设备要求、历史趋势一起交给维护人员分析。本文不提供所有泵通用的清洁度等级、黏度值或换油周期，这些应由具体元件和运行条件决定。\n\n## 把日常观察写成可追溯信息\n可记录现有仪表显示的油温、油位、滤芯指示状态，以及是否出现异常泡沫、外部渗漏或颜色变化。观察到变化时，注明何时开始、是否与维护或工况变化同时发生。仅凭油液外观，不能代替检测，也不能证明内部元件完好。\n\n## 维护之后，保留处理结果\n完成规定检查或更换后，记录所用油品、滤芯编号、处理原因和复查结果。涉及打开管路、取样或拆卸的操作，由受训人员按设备停机、隔离和泄压程序执行。提交维修询盘时附上台账，比只写“泵损坏”更有利于后续核对。",
+      "images": [
+        {
+          "src": "assets/flutek-fp20v.png",
+          "altEn": "FP20V axial piston pump",
+          "altZh": "FP20V 轴向柱塞泵",
+          "width": 541,
+          "height": 410,
+          "captionEn": "Original FLUTEK product image; confirm ports and controls separately.",
+          "captionZh": "FLUTEK 产品资料原图；接口与控制配置需单独核对。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.boschrexroth.com/en/my/service-and-support/hydraulic-fluids/",
+          "titleEn": "Bosch Rexroth: hydraulic fluid selection and requirements",
+          "titleZh": "Bosch Rexroth：液压油选用与要求"
+        }
+      ],
+      "titleEn": "Hydraulic fluid and cleanliness: build a useful maintenance record",
+      "titleZh": "液压油与清洁度：把维护记录做在故障之前",
+      "category": "maintenance",
+      "summaryEn": "Track fluid, filtration and sample history against the requirements of the actual equipment.",
+      "summaryZh": "从油品、滤芯到取样记录，建立能追溯的维护信息，避免用统一换油周期替代设备要求。",
+      "relatedProducts": [
+        "k3vg",
+        "fp20v",
+        "pump-motor-parts"
+      ]
+    },
+    {
+      "id": "hydraulic-noise-temperature",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/k3v112.webp",
+        "altEn": "K3V / K5V tandem pump",
+        "altZh": "K3V / K5V 串联双泵",
+        "width": 757,
+        "height": 406,
+        "captionEn": "Tandem pump image from the product catalogue, showing the assembly.",
+        "captionZh": "产品样本中的双泵图，展示总成外形。"
+      },
+      "bodyEn": "## 1. Timing and affected movement\nRecord whether the symptom occurs cold or warm, unloaded or under load, or during a particular movement. Distinguish a continuous issue from an intermittent one. Describe affected functions separately and keep observations separate from assumptions about the cause.\n\n## 2. Existing instrument readings\nWhere observation is permitted, record the installed pressure, temperature and speed indications and alarm messages, including measuring points and units. Comparable readings from normal operation are useful. Additional measuring connections require qualified personnel following the machine procedure.\n\n## 3. Recent changes\nList recent fluid, filter or pump changes, pipework maintenance, controller changes and different loads. Bosch Rexroth service guidance identifies inlet conditions, viscosity, case pressure and internal leakage as factors to review. These are investigation areas, not a diagnosis of the particular machine.\n\n## 4. Photographs tied to the equipment\nProvide the nameplate, assembly location, visible ports and regulator labels, identifying the viewing direction. Record sound or alarms only from a safe position. Do not approach moving equipment for a photograph, loosen pressurised connections, block a drain or repeatedly force operation to reproduce a symptom.\n\n## 5. Shutdown and professional assessment\nFollow site procedures for sudden severe noise, significant leakage or a prescribed shutdown alarm. Give the records, photographs and service history to the responsible maintenance or technical personnel for model-specific assessment. Sound alone does not establish pump failure or justify a generic pressure adjustment.",
+      "bodyZh": "## 一、出现时机与动作\n记录异常发生在冷机、热机、空载、加载还是某个特定动作，并说明是持续出现还是偶发。若多个动作受影响，分别描述，不把“速度慢”“压力低”“声音大”合并为同一结论。故障记录应区分观察到的事实和个人判断。\n\n## 二、已有仪表的读数\n在设备允许的观察条件下，记录已有仪表显示的压力、油温、转速和报警信息，并注明测点和单位。对照正常时期的同类记录，比单一读数更有意义。需要新增测点或连接检测仪器时，应由专业人员按设备程序处理。\n\n## 三、最近发生过什么变化\n补充最近是否换油、换滤芯、换泵、检修管路、修改控制器或改变设备负载。Bosch Rexroth 的维护资料将吸入条件、油液黏度、壳体压力和内部泄漏列为需要关注的因素；这些是核查方向，不等于已经诊断出某一个原因。\n\n## 四、按现有资料组织照片\n提供铭牌、总成安装位置、外部可见油口及控制器标签照片，并在照片上注明拍摄方向。可录制从安全位置获取的异常声音或报警画面。不要为拍摄靠近运动部件，也不要带压松动接头、堵住泄油口或反复强行运行设备。\n\n## 五、明确停机与后续核查\n出现突发剧烈异响、明显泄漏或设备规定的停机报警时，按现场规程停机处置。将现象、读数、照片和维护历史交给设备维护人员或供货技术人员，依据对应型号说明完成诊断。仅凭声音不能确认泵损坏，更不能据此决定通用调压值。",
+      "images": [
+        {
+          "src": "assets/flutek-eppr.png",
+          "altEn": "EPPR electro-hydraulic proportional reducing valve",
+          "altZh": "EPPR 电液比例减压阀",
+          "width": 539,
+          "height": 411,
+          "captionEn": "Original FLUTEK product image illustrating a control component.",
+          "captionZh": "FLUTEK 产品资料原图，用于控制元件说明。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.boschrexroth.com/en/pl/service-and-support/service/repairs/failures-causes-and-advices/",
+          "titleEn": "Bosch Rexroth: failures, causes and advice",
+          "titleZh": "Bosch Rexroth：故障原因与维护建议"
+        }
+      ],
+      "titleEn": "Noise, rising temperature or slow movement: five useful records",
+      "titleZh": "异响、油温升高、动作变慢：先整理这五类信息",
+      "category": "maintenance",
+      "summaryEn": "Give service personnel the timing, readings and maintenance history needed to assess similar symptoms.",
+      "summaryZh": "相似现象可能有不同原因。用出现时机、仪表读数和维护历史，帮助专业人员缩小核查范围。",
+      "relatedProducts": [
+        "k3v112-k5v140",
+        "k3vl",
+        "eppr"
+      ]
+    },
+    {
+      "id": "radial-motor-enquiry",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/radial.webp",
+        "altEn": "HMC / HMB radial piston motor cutaway",
+        "altZh": "HMC / HMB 径向柱塞马达剖视图",
+        "width": 732,
+        "height": 842,
+        "captionEn": "Catalogue cutaway for understanding the structure, not an installation drawing.",
+        "captionZh": "产品样本剖视图，用于认识结构，不作为安装图纸。"
+      },
+      "bodyEn": "## Retain the complete model identity\nThe existing product information distinguishes HMC variable-displacement two-speed and HMB fixed-displacement single-speed families. Further matching requires the full model, machine identity and existing connections. This is an enquiry checklist; displacement combinations and operating limits must come from the model-specific documentation.\n\n## Describe the driven load\nRecord the driven equipment, normal speed, starting conditions, continuous running time and load changes, including frequent starts or reversals. For an existing machine, provide its original configuration and operating records where available. A single maximum torque or speed value is not a complete selection basis.\n\n## Include shaft and circuit connections\nSupply flange, shaft and coupling or transmission details together with the hydraulic schematic. Explain the existing control arrangement if speed switching is required. External shaft loads, braking and load-holding functions need a system-level review by the responsible technical personnel.\n\n## Use application images as context\nRadial motors can be components in industrial and marine hydraulic arrangements, but a deck machinery picture does not establish a specific motor fit. Marine enquiries should identify the vessel, equipment location, existing drive arrangement and project documentation requirements. Related products are not evidence of a validated system combination.\n\n## Separate assembly and parts requests\nFor complete motors, state the full code and quantity. For components, add part references, marked positions and inspection records. If a reference is unavailable, submit clear photographs for review rather than selecting a replacement by apparent size. Full catalogues and installation documents remain available by enquiry.",
+      "bodyZh": "## 先把完整型号保留下来\n现有产品资料区分 HMC 变排量双速与 HMB 定排量单速系列。进一步匹配时，需要完整型号、设备信息及现有连接方式。本文帮助整理询盘输入；具体排量组合、性能范围和允许工作条件以对应型号资料为准。\n\n## 用负载工况描述需求\n记录驱动对象、正常转速、启动情况、连续运行时间和负载变化，并说明有无频繁启停或换向。对于既有设备，尽可能提供原配置与实际工作记录。不要单独依据最大扭矩或最大转速中的一个值选型，相关条件需要一起评估。\n\n## 轴端与系统连接同样重要\n提供安装法兰、轴端、联轴器或传动连接的资料，以及原液压原理图。若设备要求速度切换，应说明原有控制安排。涉及径向或轴向外载、制动或负载保持功能时，应交由负责系统的技术人员结合总成要求确认。\n\n## 应用图片只是沟通辅助\n径向马达可作为工业与船用液压方案中的部件，但一张甲板机械照片不能证明某个具体马达适配该设备。船用询盘还应标明船型、使用部位、既有驱动方案与项目文件要求，不将产品关联误认为已完成系统验证。\n\n## 配件与整机需求分开写\n采购整机时说明完整型号和数量；采购配件时增加零件编号、标注位置和拆检记录。无编号的部件可先提供清晰照片等待核对，不凭尺寸相近直接确定替换。完整样本与安装资料仍通过询盘提供。",
+      "images": [
+        {
+          "src": "assets/flutek-contained-deck-machinery.png",
+          "altEn": "Self-contained electro-hydraulic deck machinery",
+          "altZh": "船用电液自容式甲板机械",
+          "width": 853,
+          "height": 578,
+          "captionEn": "FLUTEK self-contained equipment image; suitability requires a vessel-specific review.",
+          "captionZh": "FLUTEK 电液自容式产品图；适用性需结合船舶方案核对。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [],
+      "titleEn": "HMC / HMB radial motors: information to check before selection",
+      "titleZh": "HMC / HMB 径向柱塞马达：选型前要核对哪些条件",
+      "category": "guide",
+      "summaryEn": "Review load, speed, duty cycle and shaft installation together before matching a motor.",
+      "summaryZh": "把负载、转速、工作循环和轴端安装条件一起提交，避免用外形相近判断马达适配。",
+      "relatedProducts": [
+        "hmc-hmb",
+        "deck-machinery"
+      ]
+    },
+    {
+      "id": "swing-travel-drive-matching",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/ftd.webp",
+        "altEn": "FTD travel drive assembly",
+        "altZh": "FTD 行走驱动总成",
+        "width": 871,
+        "height": 765,
+        "captionEn": "Original catalogue image; mounting dimensions and ratio depend on the complete model.",
+        "captionZh": "产品样本原图；安装尺寸与速比按完整型号确认。"
+      },
+      "bodyEn": "## Define the replacement scope\nA swing or travel drive enquiry may concern the entire assembly, only the motor, the reduction unit or an internal component. State the required scope first and photograph the assembly and subassembly nameplates. A motor family alone may omit important gearing and mounting information.\n\n## Submit interface information together\nRecord the machine brand, model, installation position and existing assembly code. Supply available drawings for the flange, bolt pattern, shaft or output connection. Include overall and connection photographs; critical dimensions require suitable measurement, not estimates from a perspective image.\n\n## Include the control requirements\nDescribe the original rotation, speed selection, brake-release and control-line arrangements with the corresponding schematic. Suffixes and configurations may affect these connections. Identify the installation side for paired or symmetrical units instead of relying on appearance.\n\n## Retain the failure history\nExplain the reason for replacement, operating time and the movement associated with the symptom, and attach available inspection records. If contamination or component damage has occurred, maintenance personnel should assess the related circuit and components. Matching a new drive and resolving the original fault are separate checks.\n\n## Review the enquiry package\nKeep the machine identity, assembly and component labels, interface drawings, control information and quantity in one request. Product families provide an initial way to navigate the catalogue. Final matching depends on the complete assembly code and documents, not a similar advertised machine weight class.",
+      "bodyZh": "## 明确要更换的是哪一部分\n回转与行走驱动产品通常以总成形式沟通，但询盘可能只涉及马达、减速机构或其中的配件。请首先说明需求边界，并同时拍摄总成和各子部件的铭牌。只记录马达系列，可能遗漏减速机构及安装配置的信息。\n\n## 接口资料应成组提交\n记录设备品牌、机型、安装位置和原总成代码，提供法兰、连接孔、轴端或输出端的已有图纸。现场照片应覆盖整体和关键连接处；关键尺寸由具备条件的人员按规范测量，不能从透视照片推算出安装尺寸。\n\n## 控制要求不能遗漏\n请说明原系统的旋向、速度切换、制动释放及控制管路安排，并提供对应原理图。不同后缀或配置可能影响这些连接。对于对称布置或左右安装的部件，应明确安装侧，避免仅凭外观作判断。\n\n## 故障历史也是匹配资料\n描述更换原因、运行时间及异常出现时的动作，并附上已有检修记录。若系统发生过污染或部件损伤，应由维护人员评估相关部件与油路状态；新总成的选型和原故障原因的处理应分别完成核对。\n\n## 发出询盘前的最后核对\n将设备信息、两级铭牌照片、接口资料、控制说明和需求数量放进同一份询盘。产品中心的回转与行走系列提供初步分类，最终匹配应以完整总成型号与对应资料为依据，不以“适用吨位相近”作为替代保证。",
+      "images": [
+        {
+          "src": "assets/m5x.webp",
+          "altEn": "M5X–FRG swing drive assembly",
+          "altZh": "M5X–FRG 回转驱动总成",
+          "width": 760,
+          "height": 1234,
+          "captionEn": "Original catalogue image of the motor and reduction assembly.",
+          "captionZh": "产品样本原图，包含马达与减速机构。",
+          "afterParagraph": 2
+        },
+        {
+          "src": "assets/k3v112.webp",
+          "altEn": "K3V / K5V tandem pump",
+          "altZh": "K3V / K5V 串联双泵",
+          "width": 757,
+          "height": 406,
+          "captionEn": "Tandem pump image from the product catalogue, showing the assembly.",
+          "captionZh": "产品样本中的双泵图，展示总成外形。",
+          "afterParagraph": 4
+        }
+      ],
+      "sources": [],
+      "titleEn": "Replacing swing and travel drives: match the complete assembly",
+      "titleZh": "回转与行走驱动更换：总成匹配不能只看马达",
+      "category": "guide",
+      "summaryEn": "Match the motor, reduction gearing, interfaces and controls with a complete set of identification records.",
+      "summaryZh": "马达、减速机构、安装接口与控制要求需要共同核对，照片和完整铭牌应成套提供。",
+      "relatedProducts": [
+        "m5x-frg",
+        "fsm-rd",
+        "ftd",
+        "fdnb"
+      ]
+    },
+    {
+      "id": "marine-hydraulic-equipment-brief",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/flutek-steering-gear.png",
+        "altEn": "Marine electro-hydraulic steering gear",
+        "altZh": "船用电液舵机",
+        "width": 646,
+        "height": 386,
+        "captionEn": "FLUTEK steering gear product image, not a vessel delivery record.",
+        "captionZh": "FLUTEK 舵机产品图，不代表具体船舶交付案例。"
+      },
+      "bodyEn": "## Identify the equipment function\nSteering gear supports vessel steering, while deck machinery covers operations such as anchoring and mooring. The information and interfaces differ even when hydraulic power is involved. Begin with the location, intended function and whether the work concerns a new vessel, modification or replacement.\n\n## Prepare the steering gear brief\nProvide vessel and project identification, the complete existing gear model, performance requirements from the designer, and installation-space and interface information. List control stations, feedback signals, electrical supply and the required power-unit scope. Project documents and the relevant reviewing parties must establish redundancy, alarms and inspection requirements.\n\n## Use a separate deck machinery schedule\nState whether the equipment is for anchoring or mooring. Include existing chain or line information, arrangement drawings and the loads and speeds specified by the designer. Describe hauling, braking and holding conditions separately rather than using one number for every duty. Identify missing data for confirmation.\n\n## Assess power arrangements against the vessel\nThe product centre includes electro-hydraulic, electric and self-contained electro-hydraulic deck equipment. Review available power, space, operating positions, maintenance conditions and existing interfaces. Compare arrangements within the vessel design, rather than selecting by appearance, overall size or one motor parameter.\n\n## Define equipment and document boundaries\nList whether the enquiry is for a complete system or a component, spare quantities, required drawings and project inspection documents. Product illustrations are communication aids, not class approval or a promise of vessel compatibility. Request installation drawings, catalogues and configuration information through the contact page.",
+      "bodyZh": "## 先区分设备承担的功能\n舵机服务于船舶操舵，甲板机械则涉及锚泊、系泊等作业。虽然都可能采用液压方案，需求资料和系统接口并不相同。请在询盘中先写清使用部位、作业目的，以及是新船配套、改造还是现有设备更换。\n\n## 舵机询盘整理哪些资料\n建议提供船型和项目识别信息、现有舵机完整型号、设计单位给出的性能要求，以及安装空间与接口资料。控制位置、反馈信号、供电条件和配套动力单元范围应逐项列明。具体冗余、报警与检验要求由项目设计文件及相关审核方确认。\n\n## 甲板机械询盘另列一张表\n说明所需设备承担锚泊还是系泊任务，提供现有锚链或缆绳资料、布置图，以及设计文件中规定的负载与速度要求。将牵引、制动、保持等不同工况分开描述，不把一个参数当作所有工况的能力。未知数据先标注待确认。\n\n## 动力形式要与船上条件一起评估\n现有产品中心包含电液、电动和电液自容式甲板机械。选型时应确认供电、可用空间、操控位置、维护条件与既有系统接口。不同形式的比较应结合整船方案，不能仅凭设备外形、体积或单一电机参数决定。\n\n## 明确交付与文件边界\n在询盘中列出需要整套系统还是单个部件、备件数量、图纸清单和项目检验文件要求。图片与系列介绍用于帮助沟通，不构成船级认可或特定船舶适配承诺。需要核对的安装图、产品样本与配置说明，请通过联系页面提交需求。",
+      "images": [
+        {
+          "src": "assets/flutek-deck-machinery.png",
+          "altEn": "Marine electro-hydraulic deck machinery",
+          "altZh": "船用电液甲板机械",
+          "width": 973,
+          "height": 549,
+          "captionEn": "FLUTEK deck machinery image; the supply scope is confirmed for each project.",
+          "captionZh": "FLUTEK 甲板机械产品图，实际供货范围按项目确认。",
+          "afterParagraph": 2
+        },
+        {
+          "src": "assets/flutek-electric-deck-machinery.png",
+          "altEn": "Electric marine deck machinery",
+          "altZh": "船用电动甲板机械",
+          "width": 991,
+          "height": 558,
+          "captionEn": "FLUTEK electric deck machinery image with the original structure preserved.",
+          "captionZh": "FLUTEK 电动甲板机械产品图，保持原有结构。",
+          "afterParagraph": 4
+        }
+      ],
+      "sources": [],
+      "titleEn": "Steering gear and deck machinery: prepare a clear technical brief",
+      "titleZh": "船用舵机与甲板机械：一份清晰的技术询盘怎么准备",
+      "category": "marine",
+      "summaryEn": "Separate steering, anchoring and mooring requirements, then document the vessel, power and controls.",
+      "summaryZh": "从使用功能、船舶资料到动力与控制条件，分别整理舵机和锚泊、系泊设备的需求。",
+      "relatedProducts": [
+        "steering-gear",
+        "deck-machinery",
+        "hmc-hmb"
+      ]
+    },
+    {
+      "id": "imo-safe-mooring-reference",
+      "date": "2026-11-17",
+      "cover": {
+        "src": "assets/flutek-deck-machinery.png",
+        "altEn": "Marine electro-hydraulic deck machinery",
+        "altZh": "船用电液甲板机械",
+        "width": 973,
+        "height": 549,
+        "captionEn": "FLUTEK deck machinery image; the supply scope is confirmed for each project.",
+        "captionZh": "FLUTEK 甲板机械产品图，实际供货范围按项目确认。"
+      },
+      "bodyEn": "## A reference to requirements already in force\nThe IMO Safe Mooring page states that the relevant SOLAS II-1/3-8 amendments entered into force on 1 January 2024 and identifies supporting guidance. Published on 17 November 2026, this article reviews that information; it is not a report of a new event on the publication date.\n\n## Separate design and maintenance documents\nIMO identifies MSC.1/Circ.1619 for mooring arrangement design and equipment and fitting selection, and MSC.1/Circ.1620 for inspection and maintenance of mooring equipment including lines. Applicability needs to be checked for the vessel. A product page alone is not a complete compliance basis.\n\n## Practical information for an equipment enquiry\nGather existing arrangement drawings, equipment identities, line or chain information, manufacturer documents and the design and inspection requirements supplied by the project team. This is a document-preparation suggestion, not an assessment of a vessel or a statement of unverified equipment performance.\n\n## Keep the review traceable\nIn the enquiry record, identify drawing numbers and revisions, document providers, open questions and the people responsible for checking them. The project technical team should review differences between existing and proposed equipment. Matching names or appearances do not settle that comparison.\n\n## Check the original information\nThe reference below leads to the IMO topic page and its associated documents. The owner, designer and relevant authorities or inspection bodies should confirm project applicability. This article and its product illustration do not claim a Tailer class approval or describe a completed customer project.",
+      "bodyZh": "## 这是已生效规定的资料回顾\nIMO 官方安全系泊专题说明，SOLAS 第 II-1/3-8 条相关修订于 2024 年 1 月 1 日生效，并列出了配套文件。本篇发布于 2026 年 11 月 17 日，是对公开资料的整理，不将上述生效时间表述为当天发生的行业事件。\n\n## 设计选型与维护文件分开看\nIMO 专题列出 MSC.1/Circ.1619，内容涉及安全系泊布置设计及设备和附件选择；MSC.1/Circ.1620 涉及系泊设备及缆绳的检查与维护。相关文件的适用范围应结合船舶资料确认，不能把一份设备产品页当作完整的合规依据。\n\n## 给设备沟通带来的实际提示\n在准备甲板机械询盘时，可先归集现有布置图、设备型号、缆绳或锚链信息、制造商文件，以及由项目负责方提供的设计与检验要求。这是一份资料整理建议，不是对具体船舶的适用性判断，也不包含未经确认的设备性能。\n\n## 留下可追溯的核对记录\n建议在询盘或技术沟通记录中注明所用图纸的编号与版本、资料提供方、待确认事项和负责核对的人员。更换设备时，原设备与拟选设备的差异应由项目技术团队评估，不能仅依靠相同名称或外观作结论。\n\n## 从原文开始核对\n下方链接指向 IMO 官方专题，可继续查看其列出的文件及适用说明。具体项目请由船东、设计单位及相关主管或检验机构按适用要求确认。本文及配图不表示泰乐已取得某项船级认可，也不对应某个已完成的客户项目。",
+      "images": [
+        {
+          "src": "assets/flutek-contained-deck-machinery.png",
+          "altEn": "Self-contained electro-hydraulic deck machinery",
+          "altZh": "船用电液自容式甲板机械",
+          "width": 853,
+          "height": 578,
+          "captionEn": "FLUTEK self-contained equipment image; suitability requires a vessel-specific review.",
+          "captionZh": "FLUTEK 电液自容式产品图；适用性需结合船舶方案核对。",
+          "afterParagraph": 3
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.imo.org/en/ourwork/safety/pages/safemooring.aspx",
+          "titleEn": "IMO: Safe Mooring and associated guidance",
+          "titleZh": "IMO：安全系泊与相关文件"
+        }
+      ],
+      "titleEn": "Industry reference: IMO safe mooring guidance and equipment records",
+      "titleZh": "行业资料：IMO 安全系泊要求与设备资料准备",
+      "category": "industry",
+      "summaryEn": "A reference to amendments in force since 2024, with separate design and maintenance guidance and an IMO source.",
+      "summaryZh": "回顾 2024 年已生效的相关修订，区分设计选型与检查维护资料，附 IMO 官方来源。",
+      "relatedProducts": [
+        "deck-machinery",
+        "steering-gear"
+      ]
+    },
     {
       "id": "request-product-documentation",
       "date": "2026-11-17",
-      "category": "service",
-      "titleZh": "产品样本与技术图纸，统一通过询盘索取",
+      "cover": {
+        "src": "assets/k3vg-official-original.jpg",
+        "altEn": "K3VG industrial piston pump",
+        "altZh": "K3VG 工业柱塞泵",
+        "width": 660,
+        "height": 500,
+        "captionEn": "FLUTEK manufacturer product image; configuration depends on the complete model code.",
+        "captionZh": "FLUTEK 原厂产品图；具体配置以完整型号为准。"
+      },
+      "bodyEn": "The Tailer website provides product introductions and technical specifications. Complete catalogues, installation drawings and parts documents are available by enquiry.\n\nPlease include the complete product model, machine brand and model, working conditions, and your contact details. Nameplate and component photographs can be shared through WeChat.\n\nWeChat: 17700593723. Documentation is reviewed against the specific model and application.\n\n## Explain how the documents will be used\nPreliminary selection, installation checks and repair-part matching need different information. Describe the task and include any drawing number or revision already available. If the document name is unknown, identify the interface, component or function to be checked.\n\n## Prepare photographs that can be reviewed\nInclude separate views of the overall machine, complete nameplate, installation interfaces and relevant component. Keep the label readable and avoid glare; pair a close-up with an overall view that shows its location. Catalogue images in this article do not replace photographs or measurements of your equipment.\n\n## Check the received document\nCompare its family, complete model, revision and applicable configuration with the machine. Report differences in interfaces or controls before proceeding. Full catalogues are not offered as public downloads; request documents for the actual task through an enquiry.",
+      "bodyZh": "泰乐网站保留产品介绍与技术参数展示。完整产品样本、安装图纸及零件资料，请通过询盘向我们索取。\n\n请提供产品完整型号、设备品牌与机型、应用工况，以及联系方式。如有铭牌照片或现有部件照片，也可通过微信发送给我们。\n\n联系微信：17700593723。我们将结合具体型号与需求核对资料。\n\n## 请把资料用途写清楚\n用于初步选型、安装核对和维修配件匹配的资料并不相同。请说明正在处理的任务，提供已有图纸编号或版本；不确定资料名称时，可描述需要核对的接口、部件或功能。\n\n## 如何拍摄便于核对的照片\n建议分别准备设备整体、完整铭牌、安装接口和具体部件照片。铭牌保持可读，避免反光；局部照片同时保留一张整体定位图。本文配图是产品资料中的原图，不能替代您当前设备的铭牌或测量记录。\n\n## 收到资料后的核对\n请检查资料上的系列、完整型号、版本和适用配置是否与设备一致。若安装接口或控制方式存在差异，应先反馈差异再继续核对。本站不公开提供整本样本下载，资料仍按实际需求通过询盘获取。",
+      "images": [
+        {
+          "src": "assets/radial.webp",
+          "altEn": "HMC / HMB radial piston motor cutaway",
+          "altZh": "HMC / HMB 径向柱塞马达剖视图",
+          "width": 732,
+          "height": 842,
+          "captionEn": "Catalogue cutaway for understanding the structure, not an installation drawing.",
+          "captionZh": "产品样本剖视图，用于认识结构，不作为安装图纸。",
+          "afterParagraph": 4
+        }
+      ],
+      "sources": [],
       "titleEn": "Request product catalogues and technical drawings",
-      "summaryZh": "提交完整型号、设备用途和联系方式，索取匹配的产品样本与技术图纸。",
+      "titleZh": "产品样本与技术图纸，统一通过询盘索取",
+      "category": "service",
       "summaryEn": "Share the full model, machine application and contact details to request the appropriate catalogue and drawings.",
-      "bodyZh": "泰乐网站保留产品介绍与技术参数展示。完整产品样本、安装图纸及零件资料，请通过询盘向我们索取。\n\n请提供产品完整型号、设备品牌与机型、应用工况，以及联系方式。如有铭牌照片或现有部件照片，也可通过微信发送给我们。\n\n联系微信：17700593723。我们将结合具体型号与需求核对资料。",
-      "bodyEn": "The Tailer website provides product introductions and technical specifications. Complete catalogues, installation drawings and parts documents are available by enquiry.\n\nPlease include the complete product model, machine brand and model, working conditions, and your contact details. Nameplate and component photographs can be shared through WeChat.\n\nWeChat: 17700593723. Documentation is reviewed against the specific model and application."
+      "summaryZh": "提交完整型号、设备用途和联系方式，索取匹配的产品样本与技术图纸。",
+      "relatedProducts": [
+        "k3vg",
+        "hmc-hmb",
+        "pump-motor-parts"
+      ]
     },
     {
       "id": "prepare-hydraulic-enquiry",
       "date": "2026-11-17",
-      "category": "guide",
-      "titleZh": "液压产品询盘，需要准备哪些信息？",
+      "cover": {
+        "src": "assets/k3v112.webp",
+        "altEn": "K3V / K5V tandem pump",
+        "altZh": "K3V / K5V 串联双泵",
+        "width": 757,
+        "height": 406,
+        "captionEn": "Tandem pump image from the product catalogue, showing the assembly.",
+        "captionZh": "产品样本中的双泵图，展示总成外形。"
+      },
+      "bodyEn": "A series name is a starting point for product selection. Include the complete nameplate code, machine brand and model, and photographs of the existing component.\n\nIf technical requirements are known, add displacement, working pressure, control method, rotation and mounting interfaces. For parts, include the part number or marked position.\n\nConfirm the configuration against the complete model and operating conditions. Prepare your enquiry on the contact page, then send it by email or copy it to WeChat.\n\n## Match each photograph to a request\nGive each machine or component an identifier and use it to connect the nameplate, overall photograph and requirement. If one machine needs pumps, motors and reduction units, list them separately so model codes and quantities are not mixed.\n\n## Record unknown conditions honestly\nStart with the application, working hours, affected movement and readings already available, identifying anything that remains unconfirmed. Reviewable information is more useful than guessed pressure or displacement values. For a fault enquiry, add the timing of the symptom and recent maintenance history.\n\n## Separate supply scope from delivery requirements\nState whether the request concerns a complete unit, assembly, regulator or component, with quantity, destination and desired timing. List installation drawings, parts lists or project documents separately. Available configurations, documents and delivery arrangements are confirmed after review.",
+      "bodyZh": "系列名称是产品选型的起点。核对现有设备时，请尽量提供完整铭牌型号、设备品牌与机型、现有部件照片。\n\n如已明确技术要求，请补充排量、工作压力、控制方式、旋向和安装接口。配件需求还可提供零件编号或标注位置。\n\n产品配置需要结合具体型号与工况确认。可在联系页面整理询盘内容，通过邮箱发送，或复制后通过微信与我们沟通。\n\n## 让照片与文字一一对应\n为每个设备或部件分别编号，把铭牌照片、整体照片与需求描述对应起来。若同一设备需要泵、马达与减速机构等多个部件，请分项列出，避免混用型号和数量。\n\n## 工况不明确时怎么填写\n可以先记录设备用途、工作时长、当前动作和已有仪表读数，并注明哪些值尚未确认。技术人员需要的是可核对的信息，不需要为补齐表格填入推测的压力或排量。若涉及故障，补充出现时机及最近维护记录。\n\n## 区分采购范围与交付要求\n说明需要整机、总成、控制器还是配件，同时写明数量、收货地区及期望时间。需要安装图、配件清单或项目文件时单独列明，具体可供配置、资料和交付安排在核对后确认。",
+      "images": [
+        {
+          "src": "assets/ftd.webp",
+          "altEn": "FTD travel drive assembly",
+          "altZh": "FTD 行走驱动总成",
+          "width": 871,
+          "height": 765,
+          "captionEn": "Original catalogue image; mounting dimensions and ratio depend on the complete model.",
+          "captionZh": "产品样本原图；安装尺寸与速比按完整型号确认。",
+          "afterParagraph": 4
+        }
+      ],
+      "sources": [],
       "titleEn": "What should you include in a hydraulic product enquiry?",
-      "summaryZh": "从铭牌、工况到安装接口，让选型沟通更明确。",
+      "titleZh": "液压产品询盘，需要准备哪些信息？",
+      "category": "guide",
       "summaryEn": "From nameplates and operating conditions to mounting interfaces.",
-      "bodyZh": "系列名称是产品选型的起点。核对现有设备时，请尽量提供完整铭牌型号、设备品牌与机型、现有部件照片。\n\n如已明确技术要求，请补充排量、工作压力、控制方式、旋向和安装接口。配件需求还可提供零件编号或标注位置。\n\n产品配置需要结合具体型号与工况确认。可在联系页面整理询盘内容，通过邮箱发送，或复制后通过微信与我们沟通。",
-      "bodyEn": "A series name is a starting point for product selection. Include the complete nameplate code, machine brand and model, and photographs of the existing component.\n\nIf technical requirements are known, add displacement, working pressure, control method, rotation and mounting interfaces. For parts, include the part number or marked position.\n\nConfirm the configuration against the complete model and operating conditions. Prepare your enquiry on the contact page, then send it by email or copy it to WeChat."
+      "summaryZh": "从铭牌、工况到安装接口，让选型沟通更明确。",
+      "relatedProducts": [
+        "k3v112-k5v140",
+        "ftd",
+        "m5x-frg"
+      ]
     }
-  ]
+  ],
+  "pages": {},
+  "version": 1,
+  "products": {
+    "k7v": {
+      "descriptionEn": "The K7V family for mobile machinery, with cutaway views, specifications, and installation dimensions."
+    },
+    "f5sp": {
+      "descriptionEn": "Compact hydraulic pump series, mainly applied to 5–8 ton class hydraulic excavators.",
+      "descriptionZh": "紧凑型液压泵系列，主要应用于5-8吨级液压挖掘机。\n\n\n"
+    },
+    "k3vg": {
+      "descriptionEn": "Six sizes—63, 112, 180, 280, 180DT and 280DT—for industrial hydraulics, including injection molding, presses and marine deck machinery."
+    },
+    "fsm-rd": {
+      "descriptionEn": "The FSM-RD swing device series is composed of a swash plate axial piston motor and a two-stage planetary reducer. The motor integrates safety valve, oil filling valve, anti-rotary valve, and mechanical parking brake machine delay valve. ",
+      "descriptionZh": "该系列回转装置由斜盘式柱塞马达和二级行星减速机组成，马达集成了安全溢流阀、补油阀、防回转阀、机械式停车制动器延时阀，主要应用于5-8吨液压挖掘机。"
+    },
+    "k3v63-k5v80": {
+      "descriptionEn": "The K3V63 and K5V80 series tandem pumps offer a variety of selectable control options. K3V63/K5V80 apply to 13-15 ton crawler excavators and 15-18 ton wheeled excavators; the K3V63 and K5V80 can also be attached with a PTO box. They also suit various other hydraulic open-circuit equipment, such as concrete equipment, drilling machines, and similar applications.",
+      "descriptionZh": "K3V63/K5V80串联双泵具有多种控制方式可选。K3V63/K5V80适用于13-15吨级履带挖掘机及15-18吨级轮式挖掘机，并可以加装PTO传动箱。它们也适用于及其他各类开式液压回路，如混凝土设备、钻机等。"
+    }
+  },
+  "revision": 6
 }

@@ -5,7 +5,7 @@ This repository contains only the public static files for a website design revie
 - Publishing directory: `docs/`
 - GitHub Pages source: `main`, `/docs`
 - Expected preview path: `/tailer-preview/`
-- Original source revision: `3c5740ea54e4606513c0ddd8d13a72cd15380b02`
+- Original source revision: `8fe6d7626e141b184b5ac326dcf76fbda66d0adb`
 - Public catalogue: 25 product families, 72 HTML pages, 0 PDFs.
 - All catalogues and full-page previews are supplied only on enquiry.
 - Production-line content has been removed. Marine equipment is under Products.
