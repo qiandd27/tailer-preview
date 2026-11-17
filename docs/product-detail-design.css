@@ -83,7 +83,7 @@
 .model-story--pictured p { grid-column: 2; }
 .model-story--pictured .component-photo { grid-column: 1; grid-row: 1 / span 4; margin: 0; border-color: #e2e7ea; }
 .model-story--pictured .component-photo img { height: 250px; padding: 18px; object-fit: contain; }
-.model-story--pictured .component-photo figcaption { padding: 9px 12px; background: #f7f8f9; }
+.model-story--pictured .component-photo figcaption { padding: 9px 12px; background: #f7f8f9; color: #526975; }
 .model-story--pictured .model-chips, .model-story--pictured .model-spec-link { grid-column: 2; }
 .model-story .model-chips { gap: 7px; margin-top: 17px; }
 .model-story .model-chips > span, .model-story .model-chips > a { padding: 7px 10px; background: #f4f6f7; border: 1px solid #e0e7eb; font-size: 14px; }
@@ -93,7 +93,7 @@
 .model-overview { margin-top: 34px; }
 .model-overview-header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; padding: 22px 0; border-top: 2px solid #243d4b; }
 .model-overview-header > :first-child { color: #203441; font-size: 23px; font-weight: 650; line-height: 1.4; }
-.model-overview-header > :last-child { color: #657b88; font-size: 14px; }
+.model-overview-header > :last-child { color: #526975; font-size: 14px; }
 .model-overview-group { margin-bottom: 26px; }
 .model-overview-group-title { margin: 0; padding: 11px 14px; background: #f1f4f5; color: #304b59; font-size: 16px; font-weight: 650; line-height: 1.5; }
 .model-secondary-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding: 16px 0; border-top: 1px solid #dce3e7; }
@@ -103,10 +103,10 @@
 .model-overview-row { display: grid; grid-template-columns: minmax(112px, 1fr) minmax(80px, .75fr) minmax(80px, .75fr) 18px; align-items: center; gap: 12px; min-width: 0; min-height: 78px; padding: 14px 4px; border-bottom: 1px solid #e2e8eb; color: #203d4c; }
 .model-overview-name { font-family: var(--display); font-size: 17px; font-weight: 650; line-height: 1.4; overflow-wrap: anywhere; }
 .model-overview-metric { min-width: 0; }
-.model-overview-label { margin-bottom: 4px; color: #6a7d88; font-size: 13px; line-height: 1.4; }
+.model-overview-label { margin-bottom: 4px; color: #526975; font-size: 13px; line-height: 1.4; }
 .model-overview-value { display: flex; align-items: baseline; flex-wrap: wrap; gap: 2px 4px; color: #304c5b; font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.45; overflow-wrap: anywhere; }
-.model-overview-unit { font-size: 12px; font-weight: 400; color: #6a7d88; }
-.model-overview-value[data-summary-missing=true] { color: #748591; font-weight: 400; }
+.model-overview-unit { font-size: 13px; font-weight: 400; color: #526975; }
+.model-overview-value[data-summary-missing=true] { color: #526975; font-weight: 400; }
 .model-overview-value[data-summary-missing=true] .model-overview-unit { display: none; }
 .model-overview-arrow { color: #b51b2c; font-size: 18px; text-align: right; }
 .model-overview-row:focus-visible { outline: 3px solid #718f9f; outline-offset: 3px; }
@@ -119,10 +119,12 @@
 .spec-group-tabs { padding: 0 16px; background: #fff; border-bottom-color: #dce3e7; }
 .spec-group-tabs > button, .spec-group-tabs > h3 { min-height: 68px; padding: 16px 20px; font-size: 16px; }
 .spec-group-tabs > button[aria-selected=true] { color: #aa192d; }
-.spec-group-tabs small { background: #f1f4f5; }
+.spec-group-tabs small { background: #f1f4f5; color: #526975; }
 .spec-toolbar { padding: 16px 20px; }
+.spec-toolbar > p { color: #526975; }
 .engineering-table thead th, .engineering-table thead th:first-child { background: #e8eef1; color: #304a59; border-right-color: #d8e1e6; }
-.engineering-table thead small { color: #607783; }
+.engineering-table thead small { color: #526975; }
+.engineering-table .spec-not-listed { color: #526975; }
 .engineering-table th, .engineering-table td { border-right-color: transparent; }
 .engineering-table th:first-child { border-right-color: #dce3e7; }
 .technical-documents-section { padding: 68px 0; }
