@@ -18,7 +18,10 @@
       measureOverflow();
     };
     tabs.forEach((tab,i) => {
-      tab.addEventListener('click',() => activate(tab));
+      tab.addEventListener('click',() => {
+        activate(tab);
+        history.replaceState(null,'','#spec-panel-'+tab.dataset.specTab);
+      });
       tab.addEventListener('keydown',event => {
         const index = event.key === 'ArrowRight' ? (i+1)%tabs.length
           : event.key === 'ArrowLeft' ? (i-1+tabs.length)%tabs.length
@@ -40,7 +43,20 @@
         measureOverflow();
       });
     });
-    if (tabs.length) activate(tabs[0]);
+    const followHash = (scroll = false) => {
+      const target = document.getElementById(location.hash.slice(1));
+      const panel = target?.closest('[data-spec-panel]');
+      if (!panel || !root.contains(panel)) return false;
+      const tab = tabs.find(t => t.dataset.specTab === panel.dataset.specPanel);
+      if (tab) activate(tab);
+      const select = panel.querySelector('[data-spec-model]');
+      select.value = target.dataset.specRow || '';
+      select.dispatchEvent(new Event('change'));
+      if (scroll) requestAnimationFrame(() => panel.scrollIntoView({block:'start'}));
+      return true;
+    };
+    if (!followHash(true) && tabs.length) activate(tabs[0]);
+    window.addEventListener('hashchange',() => followHash(true));
     window.addEventListener('resize',measureOverflow,{passive:true});
     measureOverflow();
   });
