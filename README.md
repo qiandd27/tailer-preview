@@ -5,7 +5,7 @@ This repository contains only the public static files for a website design revie
 - Publishing directory: `docs/`
 - GitHub Pages source: `main`, `/docs`
 - Expected preview path: `/tailer-preview/`
-- Original source revision: `524cb26dfb342f27d6dd949c0151e74abf786469`
+- Original source revision: `6d28950f9ccba64b1da9c38966542a6db93d0da9`
 - Public catalogue: 26 product families, 69 HTML pages, 3 TAILER PDFs.
 - Korean manufacturer originals and withdrawn full-page previews are excluded.
 - Search engines are asked not to index this preview.
